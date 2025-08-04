@@ -13,3 +13,5 @@ Start a new project via [degit](https://github.com/Rich-Harris/degit)
 npm install -g degit
 npx degit jransome/ts-boilerplate <new-project-name>
 ```
+
+Don't forget to rename the project in the [package.json](/package.json#L2)
