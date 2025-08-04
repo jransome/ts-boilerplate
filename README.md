@@ -3,7 +3,8 @@
 For quick setup of ts projects including:
 - typescript setup
 - launch.json debug config
-- Dockerfile (node v24 alpine )
+- Dockerfile (node v24 alpine)
+- local .env support
 
 ## Instructions
 
