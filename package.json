@@ -8,11 +8,9 @@
     "dev": "ts-node index.ts"
   },
   "devDependencies": {
+    "@tsconfig/node24": "^24.0.1",
     "@types/node": "^22.0.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.9.2"
-  },
-  "dependencies": {
-    "@tsconfig/node24": "^24.0.1"
   }
 }
