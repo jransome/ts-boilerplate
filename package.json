@@ -5,13 +5,14 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
-    "dev:script": "ts-node -r dotenv/config src/index.ts",
-    "dev:server": "ts-node -r dotenv/config src/server.ts"
+    "dev:script": "nodemon -r dotenv/config src/index.ts",
+    "dev:server": "nodemon -r dotenv/config src/server.ts"
   },
   "devDependencies": {
     "@tsconfig/node24": "^24.0.1",
     "@types/node": "^22.0.0",
     "dotenv": "^17.2.1",
+    "nodemon": "^3.1.10",
     "ts-node": "^10.9.1",
     "typescript": "^5.9.2"
   },
