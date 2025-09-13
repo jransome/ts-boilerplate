@@ -5,7 +5,8 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
-    "dev": "ts-node -r dotenv/config src/index.ts"
+    "dev:script": "ts-node -r dotenv/config src/index.ts",
+    "dev:server": "ts-node -r dotenv/config src/server.ts"
   },
   "devDependencies": {
     "@tsconfig/node24": "^24.0.1",
@@ -13,5 +14,9 @@
     "dotenv": "^17.2.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.19.2",
+    "hono": "^4.9.7"
   }
 }

@@ -5,6 +5,8 @@ For quick setup of ts projects including:
 - launch.json debug config
 - Dockerfile (node v24 alpine)
 - local .env support
+- blank index script
+- hono server
 
 ## Instructions
 
