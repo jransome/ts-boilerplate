@@ -4,7 +4,8 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "start": "node dist/index.js",
+    "start:script": "node dist/index.js",
+    "start:server": "node dist/server.js",
     "dev:script": "nodemon -r dotenv/config src/index.ts",
     "dev:server": "nodemon -r dotenv/config src/server.ts",
     "lint": "eslint",
@@ -24,6 +25,8 @@
   },
   "dependencies": {
     "@hono/node-server": "^1.19.2",
-    "hono": "^4.9.7"
+    "@hono/zod-validator": "^0.7.3",
+    "hono": "^4.9.7",
+    "zod": "^4.1.9"
   }
 }

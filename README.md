@@ -6,7 +6,7 @@ For quick setup of ts projects including:
 - Dockerfile (node v24 alpine)
 - local .env support
 - blank index script
-- hono server
+- hono server w/ zod validation
 
 ## Instructions
 
