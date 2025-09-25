@@ -1,9 +1,15 @@
 import { serve } from '@hono/node-server';
 import { zValidator } from '@hono/zod-validator';
 import { Hono } from 'hono';
+import { logger } from 'hono/logger';
 import { z } from 'zod';
 
+const PORT = 3000;
+
 const app = new Hono();
+
+app.use(logger());
+
 app.get('/', (c) => c.text(`There are four lights! ${process.env.TEST_VAR}`));
 
 app.get('/things',
@@ -18,8 +24,10 @@ app.get('/things',
 
 const server = serve({
   fetch: app.fetch,
-  port: 3000,
+  port: PORT,
 });
+
+console.log(`Server is running on port ${PORT}`);
 
 // graceful shutdown
 process.on('SIGINT', () => {
