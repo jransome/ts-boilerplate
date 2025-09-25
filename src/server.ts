@@ -12,7 +12,7 @@ app.use(logger());
 
 app.get('/', (c) => c.text(`There are four lights! ${process.env.TEST_VAR}`));
 
-app.get('/things',
+app.get('/today',
   zValidator('query', z.object({
     date: z.iso.date(),
   })),
